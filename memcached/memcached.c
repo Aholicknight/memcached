@@ -3,8 +3,6 @@ memcached-PoC
 
 memcached Proof of Concept Amplification via spoofed source UDP packets. Repo includes source code for PoC and approximately 17,000 AMP hosts.
 
-memcached.c - Source code (https://pastebin.com/raw/ZiUeinae)
-memecache-amp-03-05-2018-rd.list - List of memcached servers as of 03-05-2018 (https://pastebin.com/raw/eSCHTTVu)
 
 Compile: gcc memcached.c -o memecached -pthread
 
@@ -15,7 +13,7 @@ Compile: gcc memcached.c -o memecached -pthread
 /* 
    memcache reflection script
    greeting: syn, storm, krashed, chrono, spike, niko, disliked
-   Use with extreme Caution
+   Educational and/or testing purposes only.
 */
 
 #include <time.h>
