@@ -4,6 +4,5 @@
 # memcached
 memcached Proof of Concept Amplification via spoofed source UDP packets.
 
-# What is this?
-This is memcached. A tool used to attack people with vulnerable machines.
+# This program only runs on linux not windows.
 
